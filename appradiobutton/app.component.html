@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let option of options">
+     <input type="checkbox" name="price"  (click)="getValue(option.id)" value= {{option.id}}>{{option.name}}--{{option.price}}
+  </li>
+</ul>
+<p>Selected Option : <strong>Total Price :{{total}}</strong></p>
+<!--[checked]="option.id == selectedOption.id"-->
